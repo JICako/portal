@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Электронды оқу порталы</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(rgba(0,60,120,0.75), rgba(0,60,120,0.75)), url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(135deg, #005fa3, #00aaff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.9);
+      padding: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(6px);
+    }
+
+    nav button {
+      padding: 12px 22px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #0077cc, #00c6ff);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #005fa3, #009edc);
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255,255,255,0.95);
+      color: #003366;
+      border-radius: 25px;
+      margin-top: 30px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+
+    section.active { display: bloc k; }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Электронды оқу порталы</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('plan')">Сабақ жоспары</button>
+    <button onclick="showSection('lecture')">Дәріс</button>
+    <button onclick="showSection('practice')">Практика</button>
+    <button onclick="showSection('feedback')">Кері байланыс</button>
+    <button onclick="showSection('groups')">Топқа бөлу</button>
+  </nav>
+
+  <!-- Сабақ жоспары -->
+  <section id="plan" class="active">
+    <h2>Сабақ жоспары</h2>
+    <div class="card">
+       <h2><a href=" https://drive.google.com/file/d/10T_-NseAYXFrq2VnrgvIbkTCt7fw0umo/view?usp=drive_link"><font color="blue"><download>Сабақ жоспары</button></i></a></h2>
+    </div>
+  </section>
+ 
+  <!-- Дәріс -->
+  <section id="lecture">
+        <div class="card">
+          <h2><a href="https://drive.google.com/file/d/1ABBbYpoHESkOrSauLNeKegYmZRQNE3iH/view?usp=drive_link"><font color="blue"><download>Дәріс</button></i></a></h2>
+      <p id="lectureContent">
+Практикалық жұмыс:
+Тапсырма №1.
+1. Ақпарат көзін талдау
+Мақсаты: Ақпараттың сенімділігін бағалау, критикалық ойлау дағдыларын дамыту.
+Тапсырма:
+-Интернеттен бір жаңалық мақаласын таңдаңыз.
+-Мақаланы мына критерийлер бойынша бағалаңыз:
+-Автор кім?
+-Қай көзден шыққан?
+-Мақала деректерге сүйенген бе?
+-Мақсат – ақпарат беру ме, пікір айту ма, әлде назар аударту ма?
+-Қысқаша қорытынды жазып, мақаланың сенімділігін бағалаңыз (сенімді / сенімсіз).
+</p>
+    </div>
+  </section>
+
+  <!-- Практика -->
+  <section id="practice">
+    <h2>Практикалық бөлім</h2>
+    <div class="card">
+      <p id="practiceContent">
+<p>Тапсырма №1.</p>
+<p>1. Ақпарат көзін талдау</p>
+<p>Мақсаты: Ақпараттың сенімділігін бағалау, критикалық ойлау дағдыларын дамыту.</p>
+<p>Тапсырма:</p>
+<p>-Интернеттен бір жаңалық мақаласын таңдаңыз.</p>
+<p>-Мақаланы мына критерийлер бойынша бағалаңыз:</p>
+<p>-Автор кім?</p>
+<p>-Қай көзден шыққан?</p>
+<p>-Мақала деректерге сүйенген бе?</p>
+<p>-Мақсат – ақпарат беру ме, пікір айту ма, әлде назар аударту ма?</p>
+<p>-Қысқаша қорытынды жазып, мақаланың сенімділігін бағалаңыз (сенімді / сенімсіз).</p>
+</p>
+<p>Тапсырма №2.</p>
+<p>Ақпаратты салыстыру</p>
+<p>Мақсаты: Бір тақырып бойынша ақпараттарды салыстыру, талдау қабілетін дамыту.</p>
+<p>Тапсырма:</p>
+<p>-Бір тақырып бойынша үш түрлі ақпарат көзінен мәлімет жинаңыз (мысалы: «Жасанды интеллект және білім беру»).</p>
+<p>-Әр дереккөздің негізгі ойларын кесте түрінде салыстырыңыз:</p>
+<p>Дереккөз - Негізгі ой - Сенімділік деңгейі  -  Қосымша түсініктеме </p>
+</p>
+<p>Тапсырма №3</p>
+<p>3. Фейк жаңалықты анықтау</p>
+<p>Мақсаты: Ақпараттың дұрыс немесе жалған екенін анықтау дағдыларын дамыту.</p>
+<p>Тапсырма:</p>
+<p>1. Танымал әлеуметтік желіде немесе жаңалық сайтында бір жаңалық таңдаңыз.</p>
+<p>2. Мына сұрақтарға жауап беріңіз:</p>
+<p> Бұл жаңалық сенімді ме?</p>
+<p> Қандай белгілер жалған ақпарат екенін көрсетеді?</p>
+<p>Қандай қосымша ақпарат немесе дереккөз қажет?</p>
+<p> Жауабыңызды 5–7 сөйлеммен жазып шығарыңыз.</p>
+<p>Тапсырма №4</p>
+<p>4. Медиа өнім жасау</p>
+<p>Мақсаты: Ақпаратты визуалды немесе аудиовизуалды түрде көрсету дағдыларын дамыту.</p>
+<p>Тапсырма:</p>
+<p>1.  Таңдаған тақырып бойынша қысқа бейнеролик немесе презентация жасаңыз (PowerPoint, Canva арқылы).</p>
+<p>2.  Бейнероликте:</p>
+<p>Тақырыпты анық көрсетіңіз</p>
+<p>Ақпарат көздерін көрсетіңіз</p>
+<p>Қысқаша қорытынды жасаңыз</p>
+<p>3.  Жасалған жұмысты топқа немесе сыныпта талқылаңыз.</p>
+
+    </div>
+  </section>
+  <!-- Кері байланыс -->
+  <section id="feedback">
+    <h2>Кері байланыс</h2>
+    <div class="card">
+      <label>Білім алушының аты:</label>
+      <input type="text" id="feedbackName" placeholder="Аты-жөні">
+      <label>Пікір / ұсыныс:</label>
+      <textarea id="feedbackText" placeholder="Сабақ туралы пікіріңізді жазыңыз..."></textarea>
+      <button onclick="saveFeedback()" style="margin-top:15px;padding:10px 18px;border:none;border-radius:20px;background:#0077cc;color:white;cursor:pointer;">Жіберу</button>
+    </div>
+  </section>
+
+  <!-- Топқа бөлу -->
+  <section id="groups">
+    <h2>Топқа бөлу (рөлдермен)</h2>
+    <div class="card">
+      <p>Білім алушылардың аттарын әр жолға біреуден жазыңыз:</p>
+      <textarea id="studentList" placeholder="Айдана\nЕрнар\nАружан\n..."></textarea>
+      <label>Бір топтағы адам саны:</label>
+      <input type="number" id="groupSize" value="3" min="2" max="6">
+      <button onclick="createRoleGroups()" style="margin-top:15px;padding:12px 20px;border:none;border-radius:20px;background:#0077cc;color:white;cursor:pointer;">Топқа бөлу</button>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <h3>Құрылған топтар</h3>
+      <div id="groupList"></div>
+    </div>
+  </section>
+  <script>
+    // Материалдарды сақтау
+    let lectureContent = localStorage.getItem('lecture') || "Дәріс";
+    let practiceContent = localStorage.getItem('practice') || "Практикалық жұмыс:";
+    document.getElementById('lectureContent').innerText = lectureContent;
+    document.getElementById('practiceContent').innerText = practiceContent;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      window.showSection = function(id) {
+        document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+        const el = document.getElementById(id);
+        if (el) el.classList.add('active');
+
+        if(id === 'adminPanel') renderAdminPanel();
+      }
+
+      window.openDocument = function() { alert('Бұл жерге сабақ жоспарының PDF/Word құжатын қосуға болады'); }
+
+      // Баға енгізу
+      window.saveScore = function() {
+        const name = document.getElementById('studentName').value.trim();
+        const score = document.getElementById('studentScore').value;
+        if (!name || score === '') { alert('Аты мен балды енгізіңіз'); return; }
+        if (score < 0 || score > 100) { alert('Балл 0–100 аралығында болуы керек'); return; }
+
+        // localStorage арқылы оқытушыға көріну үшін сақтау
+        let answers = JSON.parse(localStorage.getItem('answers') || '[]');
+        answers.push({name, group: '', answer: '', score});
+        localStorage.setItem('answers', JSON.stringify(answers));
+
+        alert('Балл сақталды!');
+        document.getElementById('studentName').value='';
+        document.getElementById('studentScore').value='';
+      }
+
+      // Кері байланыс
+      window.saveFeedback = function() {
+        const name = document.getElementById('feedbackName').value.trim();
+        const text = document.getElementById('feedbackText').value.trim();
+        if (!name || !text) { alert('Аты мен пікірді енгізіңіз'); return; }
+
+        let fbArr = JSON.parse(localStorage.getItem('feedbacks') || '[]');
+        fbArr.push({name, group:'', text});
+        localStorage.setItem('feedbacks', JSON.stringify(fbArr));
+
+        alert('Пікір жіберілді!');
+        document.getElementById('feedbackName').value='';
+        document.getElementById('feedbackText').value='';
+      }
+
+      // Топқа бөлу
+      window.createRoleGroups = function() {
+        const text = document.getElementById('studentList').value.trim();
+        const size = parseInt(document.getElementById('groupSize').value);
+        const output = document.getElementById('groupList');
+        if (!text) { alert('Білім алушылар тізімін енгізіңіз'); return; }
+        let students = text.split('\n').map(s=>s.trim()).filter(Boolean);
+        students.sort(()=>0.5 - Math.random());
+        const roles = ['Көшбасшы','топ мүшесі','Дизайнер','Бақылаушы','Талдаушы'];
+        output.innerHTML = '';
+        let groupNum=1;
+        for (let i=0;i<students.length;i+=size){
+          const group = students.slice(i,i+size);
+          const div = document.createElement('div');
+          div.className='group';
+          let html=`<strong>Топ ${groupNum}</strong><br>`;
+          group.forEach((name,idx)=>{ html+=`${name} — <em>${roles[idx%roles.length]}</em><br>` });
+          div.innerHTML = html;
+          output.appendChild(div);
+          groupNum++;
+        }
+      }
+
+      // Оқытушы панелін көрсету
+      window.renderAdminPanel = function(){
+        const ansTbody = document.getElementById('adminAnswers');
+        const fbTbody = document.getElementById('adminFeedback');
+        ansTbody.innerHTML=''; fbTbody.innerHTML='';
+
+        const answers = JSON.parse(localStorage.getItem('answers') || '[]');
+        answers.forEach(a=>{
+          const tr = document.createElement('tr');
+          tr.innerHTML=`<td>${a.name}</td><td>${a.group || '-'}</td><td>${a.answer || a.score || '-'}</td>`;
+          ansTbody.appendChild(tr);
+        });
+
+        const feedbacks = JSON.parse(localStorage.getItem('feedbacks') || '[]');
+        feedbacks.forEach(f=>{
+          const tr = document.createElement('tr');
+          tr.innerHTML=`<td>${f.name}</td><td>${f.group || '-'}</td><td>${f.text}</td>`;
+          fbTbody.appendChild(tr);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
